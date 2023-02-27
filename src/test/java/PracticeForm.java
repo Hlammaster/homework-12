@@ -2,10 +2,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class PracticeForm {
@@ -19,6 +20,9 @@ public class PracticeForm {
     @Test
     void fillFormTest(){
        open( "https://demoqa.com/automation-practice-form");
+
+        File img = new File("src/test/wallpaperflare.com_wallpaper (13).jpg");
+
        $("#firstName").setValue("Sirius");
        $("#lastName").setValue("Black");
        $("#userEmail").setValue("gavnuk@mail.ru");
@@ -30,6 +34,13 @@ public class PracticeForm {
        $(".react-datepicker__month").$(byText("30")).click();
        $("#subjectsInput").setValue("Chemistry").pressEnter();
        $(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
+       $("#uploadPicture").uploadFile(img);
+       $("#currentAddress-wrapper").setValue("Izmir");
+       $("#state").click();
+       $("#react-select-3-option-1").click();
+       $("#city").click();
+       $("#react-select-4-option-0").click();
+
 
 
 
