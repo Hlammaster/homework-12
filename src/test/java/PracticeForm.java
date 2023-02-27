@@ -2,6 +2,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Configuration.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -20,7 +21,12 @@ public class PracticeForm {
        $("#firstName").setValue("Sirius");
        $("#lastName").setValue("Black");
        $("#userEmail").setValue("gavnuk@mail.ru");
-
+       $("#genterWrapper").$(byText("Male")).click();
+       $("#userNumber").setValue("666");
+       $("#dateOfBirthInput").click();
+       $(".react-datepicker__month-select").selectOptionByValue("8");
+       $(".react-datepicker__year-select").selectOptionByValue("2020");
+       $(".react-datepicker__month").$(byText("30");
 
 
 
