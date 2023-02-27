@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -20,7 +21,8 @@ public class PracticeForm {
     @Test
     void fillFormTest(){
        open( "https://demoqa.com/automation-practice-form");
-
+       Selenide.executeJavaScript("$('#fixedban').remove()");
+       Selenide.executeJavaScript("$('footer').remove()");
         File img = new File("src/test/wallpaperflare.com_wallpaper (13).jpg");
 
        $("#firstName").setValue("Sirius");
@@ -35,11 +37,12 @@ public class PracticeForm {
        $("#subjectsInput").setValue("Chemistry").pressEnter();
        $(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
        $("#uploadPicture").uploadFile(img);
-       $("#currentAddress-wrapper").setValue("Izmir");
+       $("#currentAddress").setValue("Izmir");
        $("#state").click();
-       $("#react-select-3-option-1").click();
+       $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
        $("#city").click();
-       $("#react-select-4-option-0").click();
+       $("#stateCity-wrapper").$(byText("Agra")).click();
+       $("#submit").click();
 
 
 
