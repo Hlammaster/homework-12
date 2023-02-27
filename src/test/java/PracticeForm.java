@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selectors.byText;
@@ -26,7 +27,11 @@ public class PracticeForm {
        $("#dateOfBirthInput").click();
        $(".react-datepicker__month-select").selectOptionByValue("8");
        $(".react-datepicker__year-select").selectOptionByValue("2020");
-       $(".react-datepicker__month").$(byText("30");
+       $(".react-datepicker__month").$(byText("30")).click();
+       $("#subjectsInput").setValue("Chemistry").pressEnter();
+       $(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
+
+
 
 
 
