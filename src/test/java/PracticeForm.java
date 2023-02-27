@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -5,6 +6,7 @@ import org.openqa.selenium.By;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -29,7 +31,7 @@ public class PracticeForm {
        $("#lastName").setValue("Black");
        $("#userEmail").setValue("gavnuk@mail.ru");
        $("#genterWrapper").$(byText("Male")).click();
-       $("#userNumber").setValue("666");
+       $("#userNumber").setValue("6666666666");
        $("#dateOfBirthInput").click();
        $(".react-datepicker__month-select").selectOptionByValue("8");
        $(".react-datepicker__year-select").selectOptionByValue("2020");
@@ -44,7 +46,10 @@ public class PracticeForm {
        $("#stateCity-wrapper").$(byText("Agra")).click();
        $("#submit").click();
 
-
+       $(".modal-body").shouldHave(text("Sirius Black"),text("gavnuk@mail.ru"),text("Male"),
+               text("6666666666"),text("30 August,2020"),text("Chemistry"),text("Sports"),
+               text("wallpaperflare.com_wallpaper (13).jpg"), text("Izmir"),text("wallpaperflare.com_wallpaper (13).jpg"));
+       $("#closeLargeModal").click();
 
 
 
