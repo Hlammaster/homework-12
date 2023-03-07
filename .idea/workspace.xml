@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75cef808-0732-4131-ac9a-4c668699df8d" name="Changes" comment="added SevenCom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPracticeForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

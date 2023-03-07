@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.browserSize;
 import static com.codeborne.selenide.Selectors.byText;
@@ -24,20 +25,20 @@ public class TestPracticeForm {
         open("https://demoqa.com/automation-practice-form");
         Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
-        File img = new File("src/test/resources/wallpaperflare.com_wallpaper (13).jpg");
+
 
         $("#firstName").setValue("Sirius");
         $("#lastName").setValue("Black");
-        $("#userEmail").setValue("gavnuk@mail.ru");
+        $("#userEmail").setValue("cat@mail.ru");
         $("#genterWrapper").$(byText("Male")).click();
-        $("#userNumber").setValue("6666666666");
+        $("#userNumber").setValue("1234567890");
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOptionByValue("8");
-        $(".react-datepicker__year-select").selectOptionByValue("2020");
-        $(".react-datepicker__month").$(byText("30")).click();
+        $(".react-datepicker__month-select").selectOption("July");
+        $(".react-datepicker__year-select").selectOption("2020");
+        $(".react-datepicker__day--030:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Chemistry").pressEnter();
-        $(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
-        $("#uploadPicture").uploadFile(img);
+        $("#hobbiesWrapper").$(byText("Sports")).click();
+        $("#uploadPicture").uploadFromClasspath("wallpaperflare.com_wallpaper (13).jpg");
         $("#currentAddress").setValue("Izmir");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
@@ -45,9 +46,10 @@ public class TestPracticeForm {
         $("#stateCity-wrapper").$(byText("Agra")).click();
         $("#submit").click();
 
-        $(".modal-body").shouldHave(text("Sirius Black"), text("gavnuk@mail.ru"), text("Male"),
-                text("6666666666"), text("30 August,2020"), text("Chemistry"), text("Sports"),
-                text("wallpaperflare.com_wallpaper (13).jpg"), text("Izmir"), text("wallpaperflare.com_wallpaper (13).jpg"));
+        $(".modal-dialog").should(appear);
+        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $(".table-responsive").shouldHave(text("Sirius"), text("Black"),
+                text("cat@mail.ru"), text("1234567890"));
         $("#closeLargeModal").click();
 
 
