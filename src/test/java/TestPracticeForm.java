@@ -27,8 +27,8 @@ public class TestPracticeForm extends TestBase {
                 .verifyResults("Student Email", "cat@mail.ru")
                 .verifyResults("Gender", "Male")
                 .verifyResults("Mobile", "1234567890")
-                .verifyResults("Date of Birth", )
-                .verifyResults("Subjects", "30 July,2020")
+                .verifyResults("Date of Birth", "30 July,2020")
+                .verifyResults("Subjects", "Chemistry")
                 .verifyResults("Hobbies", "Music")
                 .verifyResults("Address", "Izmir")
                 .verifyResults("State and City", "Uttar Pradesh Agra");

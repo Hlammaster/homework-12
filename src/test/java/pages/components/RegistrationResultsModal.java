@@ -1,9 +1,9 @@
 package pages.components;
 
-import com.codeborne.selenide.selector.ByText;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationResultsModal {
@@ -13,7 +13,7 @@ public class RegistrationResultsModal {
     }
 
     public void verifyResult(String key, String value) {
-        $(".table-responsive").$(ByText(key)).parent()
+        $(".table-responsive").$(byText(key)).parent()
                 .shouldHave(text(value));
     }
 }

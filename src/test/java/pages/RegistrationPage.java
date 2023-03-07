@@ -56,7 +56,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setGender(String value) {
-        setGender.$(ByText(value)).setValue(value);
+        setGender.$(byText(value)).click();
 
         return this;
 
@@ -72,34 +72,34 @@ public class RegistrationPage {
         $("#dateOfBirthInput").click();
         calendarComponent.setDate(day, month, year);
 
-        return this
+        return this;
     }
 
     public RegistrationPage subjectsInput(String value) {
         subjectsInput.setValue(value).pressEnter();
 
-        return this
+        return this;
 
     }
 
     public RegistrationPage setHobbies(String value) {
         setHobbies.$(byText(value)).click();
 
-        return this
+        return this;
 
     }
 
     public RegistrationPage setPicture(String value) {
         setPicture.uploadFromClasspath(value);
 
-        return this
+        return this;
 
     }
 
     public RegistrationPage currentAddressInput(String value) {
         currentAddressInput.setValue(value);
 
-        return this
+        return this;
 
     }
 
@@ -107,7 +107,7 @@ public class RegistrationPage {
         $("#state").click();
         setState.$(byText(value)).click();
 
-        return this
+        return this;
 
     }
 
@@ -115,33 +115,33 @@ public class RegistrationPage {
         $("#city").click();
         setCity.$(byText(value)).click();
 
-        return this
+        return this;
 
     }
 
     public RegistrationPage submitClick() {
         submitButton.click();
 
-        return this
+        return this;
 
     }
 
     public RegistrationPage verifyResultsModalAppears() {
         registrationResultsModal.verifyModalAppears();
 
-        return this
+        return this;
     }
 
     public RegistrationPage verifyResults(String key, String value) {
         registrationResultsModal.verifyResult(key, value);
 
-        return this
+        return this;
     }
 
     public RegistrationPage closeButtonClick() {
         closeButton.click();
 
-        return this
+        return this;
 
     }
 
