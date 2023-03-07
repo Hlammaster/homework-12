@@ -23,12 +23,12 @@ public class RegistrationPage {
             setHobbies = $("#hobbiesWrapper"),
             setPicture = $("#uploadPicture"),
             currentAddressInput = $("#currentAddress"),
-            setState =  $("#stateCity-wrapper"),
+            setState = $("#stateCity-wrapper"),
             setCity = $("#stateCity-wrapper"),
             submitButton = $("#submit"),
             closeButton = $("#closeLargeModal");
 
-    public RegistrationPage openPage(){
+    public RegistrationPage openPage() {
         open("https://demoqa.com/automation-practice-form");
         Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
@@ -36,79 +36,89 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setFirstName(String value){
+    public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
 
         return this;
     }
 
-    public RegistrationPage setLastName(String value){
+    public RegistrationPage setLastName(String value) {
         lastNameInput.setValue(value);
 
         return this;
     }
 
-    public RegistrationPage setEmail(String value){
+    public RegistrationPage setEmail(String value) {
         emailInput.setValue(value);
 
         return this;
 
     }
-    public RegistrationPage setGender(String value){
-       setGender.$(ByText(value)).setValue(value);
+
+    public RegistrationPage setGender(String value) {
+        setGender.$(ByText(value)).setValue(value);
 
         return this;
 
     }
-    public RegistrationPage userNumberInput(String value){
+
+    public RegistrationPage userNumberInput(String value) {
         userNumberInput.setValue(value);
 
         return this;
     }
-    public RegistrationPage setBirthDate(String day, String month, String year){
+
+    public RegistrationPage setBirthDate(String day, String month, String year) {
         $("#dateOfBirthInput").click();
         calendarComponent.setDate(day, month, year);
 
         return this
     }
-    public RegistrationPage subjectsInput(String value){
+
+    public RegistrationPage subjectsInput(String value) {
         subjectsInput.setValue(value).pressEnter();
 
         return this
 
     }
-    public RegistrationPage setHobbies(String value){
+
+    public RegistrationPage setHobbies(String value) {
         setHobbies.$(byText(value)).click();
 
         return this
 
     }
-    public RegistrationPage setPicture(String value){
+
+    public RegistrationPage setPicture(String value) {
         setPicture.uploadFromClasspath(value);
 
         return this
 
     }
-    public RegistrationPage currentAddressInput(String value){
+
+    public RegistrationPage currentAddressInput(String value) {
         currentAddressInput.setValue(value);
 
         return this
 
     }
-    public RegistrationPage setState(String value){
+
+    public RegistrationPage setState(String value) {
         $("#state").click();
         setState.$(byText(value)).click();
 
         return this
 
     }
-    public RegistrationPage setCity(String value){
+
+    public RegistrationPage setCity(String value) {
         $("#city").click();
         setCity.$(byText(value)).click();
 
         return this
 
     }
+
     public RegistrationPage submitClick() {
         submitButton.click();
 
@@ -116,16 +126,18 @@ public class RegistrationPage {
 
     }
 
-    public RegistrationPage verifyResultsModalAppears(){
+    public RegistrationPage verifyResultsModalAppears() {
         registrationResultsModal.verifyModalAppears();
 
         return this
     }
-    public RegistrationPage verifyResults(String key, String value){
+
+    public RegistrationPage verifyResults(String key, String value) {
         registrationResultsModal.verifyResult(key, value);
 
         return this
     }
+
     public RegistrationPage closeButtonClick() {
         closeButton.click();
 

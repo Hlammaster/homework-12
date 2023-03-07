@@ -1,10 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-
 
 public class TestPracticeForm extends TestBase {
 
@@ -16,7 +11,7 @@ public class TestPracticeForm extends TestBase {
                 .setFirstName("Sirius")
                 .setLastName("Black")
                 .setEmail("cat@mail.ru")
-                .setGender("Mail")
+                .setGender("Male")
                 .userNumberInput("1234567890")
                 .setBirthDate("30", "July", "2020")
                 .subjectsInput("Chemistry")
@@ -28,16 +23,16 @@ public class TestPracticeForm extends TestBase {
                 .submitClick();
 
         registrationPage.verifyResultsModalAppears()
-                        .verifyResults()
-
-
-
-        $(".modal-dialog").should(appear);
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Sirius"), text("Black"),
-                text("cat@mail.ru"), text("1234567890"));
-        $("#closeLargeModal").click();
-
+                .verifyResults("Student Name", "Sirius Black")
+                .verifyResults("Student Email", "cat@mail.ru")
+                .verifyResults("Gender", "Male")
+                .verifyResults("Mobile", "1234567890")
+                .verifyResults("Date of Birth", )
+                .verifyResults("Subjects", "30 July,2020")
+                .verifyResults("Hobbies", "Music")
+                .verifyResults("Address", "Izmir")
+                .verifyResults("State and City", "Uttar Pradesh Agra");
+        registrationPage.closeButtonClick();
 
     }
 
