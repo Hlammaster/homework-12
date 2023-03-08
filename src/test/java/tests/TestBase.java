@@ -1,3 +1,5 @@
+package tests;
+
 import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Configuration.browserSize;
