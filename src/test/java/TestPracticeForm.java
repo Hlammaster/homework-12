@@ -8,6 +8,7 @@ public class TestPracticeForm extends TestBase {
     void fillFormTest() {
 
         registrationPage.openPage()
+                .removebannner()
                 .setFirstName("Sirius")
                 .setLastName("Black")
                 .setEmail("cat@mail.ru")

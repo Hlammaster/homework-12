@@ -30,6 +30,11 @@ public class RegistrationPage {
 
     public RegistrationPage openPage() {
         open("https://demoqa.com/automation-practice-form");
+
+
+        return this;
+    }
+    public RegistrationPage removebannner() {
         Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
 
