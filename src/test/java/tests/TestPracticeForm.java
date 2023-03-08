@@ -17,17 +17,17 @@ public class TestPracticeForm extends TestBase {
         String firstName = faker.name().firstName(),
                 lastName = faker.name().lastName(),
                 userEmail = faker.internet().emailAddress(),
-                gender = getRandomItemFromArray(gender),
+                gender = getRandomItemFromArray(TestData.gender),
                 userNumber = 8 + faker.phoneNumber().subscriberNumber(9),
                 dayOfBirth = String.format("%02d", faker.number().numberBetween(1, 28)),
                 monthOfBirth = getRandomItemFromArray(months),
                 yearOfBirth = String.valueOf(faker.number().numberBetween(1950, 2005)),
                 subject = getRandomItemFromArray(subjects),
                 hobbies = getRandomItemFromArray(hobbiess),
-                pictureName = "wallpaperflare.com_wallpaper (13).jpg",
+                pictureName = "666.png",
                 currentAddress = faker.address().streetAddress(),
-                state = getRandomItemFromArray(states),
-                cities = getRandomItemFromArray(cities);
+                state = "NCR" ,
+                cities = getRandomItemFromArray(TestData.cities);
 
 
         registrationPage.openPage()
@@ -47,15 +47,15 @@ public class TestPracticeForm extends TestBase {
                 .submitClick();
 
         registrationPage.verifyResultsModalAppears()
-                .verifyResults("Student Name", "Sirius Black")
-                .verifyResults("Student Email", "cat@mail.ru")
-                .verifyResults("Gender", "Male")
-                .verifyResults("Mobile", "1234567890")
-                .verifyResults("Date of Birth", "30 July,2020")
-                .verifyResults("Subjects", "Chemistry")
-                .verifyResults("Hobbies", "Music")
-                .verifyResults("Address", "Izmir")
-                .verifyResults("State and City", "Uttar Pradesh Agra");
+                .verifyResults("Student Name", firstName + " " + lastName)
+                .verifyResults("Student Email", userEmail)
+                .verifyResults("Gender", gender)
+                .verifyResults("Mobile", userNumber)
+                .verifyResults("Date of Birth",  dayOfBirth + " " + monthOfBirth + "," + yearOfBirth)
+                .verifyResults("Subjects", subject)
+                .verifyResults("Hobbies", hobbies)
+                .verifyResults("Address",currentAddress)
+                .verifyResults("State and City", state + " " + cities);
         registrationPage.closeButtonClick();
 
     }

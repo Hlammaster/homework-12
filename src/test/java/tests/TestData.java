@@ -14,7 +14,7 @@ public class TestData {
     public static String[] states = {"NCR", "Uttar Pradesh", "Haryana", "Rajasthan"};
 
 
-    public static String[] gender = {"Make", "Female", "Other"};
+    public static String[] gender = {"Male", "Female", "Other"};
 
 
 }
