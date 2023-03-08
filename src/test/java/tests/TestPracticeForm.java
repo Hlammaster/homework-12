@@ -31,7 +31,7 @@ public class TestPracticeForm extends TestBase {
 
 
         registrationPage.openPage()
-                .removebannner()
+                .removeBannner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(userEmail)

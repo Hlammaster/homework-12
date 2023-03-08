@@ -34,7 +34,7 @@ public class RegistrationPage {
 
         return this;
     }
-    public RegistrationPage removebannner() {
+    public RegistrationPage removeBannner() {
         Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
 
