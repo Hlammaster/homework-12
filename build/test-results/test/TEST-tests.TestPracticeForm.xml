@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.TestPracticeForm" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-29T12:14:32" hostname="DESKTOP-9C98VUC" time="7.182">
+  <properties/>
+  <testcase name="fillFormTest()" classname="tests.TestPracticeForm" time="7.182"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13387
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+мар. 29, 2023 3:14:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
+]]></system-err>
+</testsuite>
