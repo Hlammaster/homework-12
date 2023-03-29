@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 29 16:16:16 MSK 2023","Wed Mar 29 16:16:24 MSK 2023","7802","","tests.TestPracticeForm","","tests.TestPracticeForm","fillFormTest","Проверка результата вывода значений формы регистрации 'dataqa'",""
