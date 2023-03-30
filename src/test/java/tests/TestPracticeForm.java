@@ -2,7 +2,6 @@ package tests;
 
 import com.github.javafaker.Faker;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Link;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
@@ -18,12 +17,14 @@ public class TestPracticeForm extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     Faker faker = new Faker();
 
+
     @Test
     @Feature("Форма Регистрации")
     @Story("Заполение формы регистрации")
     @DisplayName("Проверка результата вывода значений формы регистрации 'dataqa'")
     @Owner("Evgenii Goncharov")
     @Tag("dataqa")
+
     void fillFormTest() {
         String firstName = faker.name().firstName(),
                 lastName = faker.name().lastName(),

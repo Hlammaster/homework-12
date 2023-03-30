@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cef808-0732-4131-ac9a-4c668699df8d" name="Changes" comment="added selenoidconfig" />
+    <list default="true" id="75cef808-0732-4131-ac9a-4c668699df8d" name="Changes" comment="added selenoidconfig1">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestPracticeForm.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +98,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TestPracticeForm (1)">
+  <component name="RunManager" selected="Gradle.dataqa [allureServe]">
     <configuration name="RandomUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.RandomUtils" />
       <module name="homework5.test" />
@@ -196,10 +202,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.dataqa [allureServe]" />
         <item itemvalue="Gradle.TestPracticeForm (1)" />
         <item itemvalue="Gradle.TestPracticeForm.fillFormTest" />
         <item itemvalue="Gradle.dataqa [allureReport]" />
-        <item itemvalue="Gradle.dataqa [allureServe]" />
         <item itemvalue="Application.RandomUtils" />
       </list>
     </recent_temporary>
@@ -402,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680101199410</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added selenoidconfig1">
+      <created>1680101861334</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680101861334</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -430,6 +443,7 @@
     <MESSAGE value="added task test" />
     <MESSAGE value="added selenoid" />
     <MESSAGE value="added selenoidconfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="added selenoidconfig" />
+    <MESSAGE value="added selenoidconfig1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added selenoidconfig1" />
   </component>
 </project>
