@@ -19,7 +19,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion" );
         Configuration.browserSize = System.getProperty("browserSize" );
         Configuration.timeout = 10000;
-        Configuration.baseUrl = System.getProperty("baseUrl");
+        Configuration.baseUrl = System.getProperty("baseUrl","https://demoqa.com");
         Configuration.remote = System.getProperty("remoteUrl");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
