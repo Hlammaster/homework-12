@@ -15,7 +15,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = System.getProperty("url");
+        Configuration.baseUrl = System.getProperty("https://demoqa.com/automation-practice-form");
         Configuration.remote = "https://user1:1234@" + System.getProperty("selenoidurl");
         Configuration.browserSize = System.getProperty("browser_size");
         Configuration.browser = System.getProperty("browser");

@@ -104,7 +104,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Gradle.dataqa [allureServe]">
+  <component name="RunManager" selected="Gradle.TestPracticeForm.fillFormTest">
     <configuration name="RandomUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.RandomUtils" />
       <module name="homework5.test" />
@@ -208,9 +208,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestPracticeForm.fillFormTest" />
         <item itemvalue="Gradle.dataqa [allureServe]" />
         <item itemvalue="Gradle.TestPracticeForm (1)" />
-        <item itemvalue="Gradle.TestPracticeForm.fillFormTest" />
         <item itemvalue="Gradle.dataqa [allureReport]" />
         <item itemvalue="Application.RandomUtils" />
       </list>
