@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cef808-0732-4131-ac9a-4c668699df8d" name="Changes" comment="added removeslackconfig">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="75cef808-0732-4131-ac9a-4c668699df8d" name="Changes" comment="added jenkins">
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680349162804</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added newbranch">
+      <created>1680507925955</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1680507925955</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added jenkins">
+      <created>1680508109260</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680508109260</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,8 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added ThirdCom" />
-    <MESSAGE value="added FourCom" />
     <MESSAGE value="added FiveCom" />
     <MESSAGE value="added SixCom" />
     <MESSAGE value="added SevenCom" />
@@ -489,6 +501,8 @@
     <MESSAGE value="added attachment" />
     <MESSAGE value="added notificationsconfig" />
     <MESSAGE value="added removeslackconfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="added removeslackconfig" />
+    <MESSAGE value="added newbranch" />
+    <MESSAGE value="added jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jenkins" />
   </component>
 </project>
