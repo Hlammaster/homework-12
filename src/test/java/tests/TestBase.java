@@ -15,10 +15,11 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        browserSize = "1920x1080";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.baseUrl = System.getProperty("base_url");
+        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url");
+        Configuration.browserSize = System.getProperty("browser_size");
+        Configuration.browser = System.getProperty("browser");
+        Configuration.browserVersion = System.getProperty("browser_version");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
