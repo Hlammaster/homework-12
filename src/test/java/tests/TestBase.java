@@ -15,11 +15,11 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = System.getProperty("base_url");
-        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url");
+        Configuration.baseUrl = System.getProperty("url");
+        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoidurl");
         Configuration.browserSize = System.getProperty("browser_size");
         Configuration.browser = System.getProperty("browser");
-        Configuration.browserVersion = System.getProperty("browser_version");
+        Configuration.browserVersion = System.getProperty("version");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
