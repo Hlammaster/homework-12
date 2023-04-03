@@ -15,6 +15,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
+        Configuration.baseUrl = System.getProperty("url");
         Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url");
         Configuration.browserSize = System.getProperty("browser_size");
         Configuration.browser = System.getProperty("browser");
